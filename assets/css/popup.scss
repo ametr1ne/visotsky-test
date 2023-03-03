@@ -1,0 +1,140 @@
+.popup {
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  width: 750px;
+  height: 450px;
+  transform: scale(0.8);
+  transition: transform 0.4s;
+
+  &-wrapper {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease-out, visibility 0.4s ease-out;
+    background-color: rgba($color: #000000, $alpha: 0.6);
+  }
+
+  &__left {
+    width: 310px;
+    position: relative;
+    background: url("./img/popup-bg.jpg") no-repeat;
+    background-size: contain;
+    border-radius: 20px 0 0 20px;
+
+    .book,
+    .arrow {
+      position: absolute;
+    }
+
+    .book {
+      top: 46px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .arrow {
+      bottom: 15%;
+      right: -39px;
+    }
+  }
+
+  &__right {
+    margin-left: 59px;
+    padding: 28px 0 63px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .popup-info {
+    text-align: center;
+
+    &__wrapper {
+      max-width: 323px;
+      margin: 0 auto;
+    }
+
+    .popup-title {
+      margin-bottom: 48px;
+    }
+
+    .popup-subtitle {
+      margin-top: 7px;
+      margin-bottom: 5px;
+      text-align: center;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 13px;
+      margin-bottom: 34px;
+      color: #0d0d0d;
+    }
+
+    small {
+      display: block;
+      margin-top: 15px;
+    }
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    label {
+      font-size: 12px;
+      line-height: 11px;
+      text-align: left;
+      margin-bottom: 16px;
+    }
+
+    .input {
+      height: 50px;
+      width: 100%;
+      outline: none;
+      border: 2px solid #f3ce00;
+      padding: 0 15px;
+      font-size: 14px;
+      line-height: 13px;
+      font-weight: bold;
+      margin-top: 5px;
+      border-radius: 4px;
+
+      &::placeholder {
+        color: #0d0d0d;
+      }
+    }
+
+    .submit-btn {
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 16px;
+      line-height: 110%;
+      color: white;
+      width: 100%;
+      height: 50px;
+      background: linear-gradient(92.64deg, #ff5621 29.24%, #f21313 83.67%);
+      border-radius: 4px;
+      transition: box-shadow 0.4s;
+
+      &:hover {
+        box-shadow: -10px 20px 30px rgba(255, 86, 33, 0.4);
+      }
+    }
+  }
+}
+
+.popup--opened {
+  opacity: 1;
+  visibility: visible;
+
+  .popup {
+    transform: scale(1);
+  }
+}
