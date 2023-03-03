@@ -1,20 +1,20 @@
 @font-face {
   font-family: "Gotham Pro";
-  src: url("/assets/fonts/GothamPro-Black.woff2") format("woff2"), url("/assets/fonts/GothamPro-Black.woff") format("woff");
+  src: url("../fonts/GothamPro-Black.woff2") format("woff2"), url("../fonts/GothamPro-Black.woff") format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Gotham Pro";
-  src: url("/assets/fonts/GothamPro.woff2") format("woff2"), url("/assets/fonts/GothamPro.woff") format("woff");
+  src: url("../fonts/GothamPro.woff2") format("woff2"), url("../fonts/GothamPro.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Gotham Pro";
-  src: url("/assets/fonts/GothamPro-Bold.woff2") format("woff2"), url("/assets/fonts/GothamPro-Bold.woff") format("woff");
+  src: url("../fonts/GothamPro-Bold.woff2") format("woff2"), url("../fonts/GothamPro-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -112,7 +112,7 @@ a {
 .popup__left {
   width: 310px;
   position: relative;
-  background: url("./img/popup-bg.jpg") no-repeat;
+  background: url("../img/popup-bg.jpg") no-repeat;
   background-size: contain;
   border-radius: 20px 0 0 20px;
 }
